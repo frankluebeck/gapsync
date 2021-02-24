@@ -1,0 +1,15 @@
+#!/bin/bash
+
+git clone https://github.com/NixOS/patchelf.git patchelfrepo
+
+cd patchelfrepo
+git checkout -b r0.12 0.12
+./bootstrap.sh
+./configure
+make CXX="g++ -static"
+strip src/patchelf
+cp src/patchelf ../
+cd ..
+echo "If no longer needed:"
+echo "    rm -rf patchelfrepo"
+

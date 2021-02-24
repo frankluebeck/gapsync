@@ -1,0 +1,97 @@
+#!/bin/bash
+
+#TEMPORARY:  copy Browse-1.8.11.1.tar.gz next to GAP archive
+
+hostname
+date
+
+# check archive
+ARCHIVE=`ls -f gap*.tar.gz |head -1`
+
+if [ $ARCHIVE'X' != X ]; then
+  echo "Using archive "$ARCHIVE
+else
+  echo "No archive found. Please, download from "
+  echo "     https://www.gap-system.org/Releases/"
+  exit 1
+fi
+
+tar xzvf $ARCHIVE --one-top-level=build
+
+#TEMPORARY:  
+cd build/gap*/pkg/
+rm -rf Browse
+tar xvzf ../../../Browse-1.8.11.1.tar.gz
+cd ../../../
+
+
+# compile GAP and packages
+cd build
+mv gap* gap-rsync
+cd gap-rsync
+./configure
+make -j 8
+
+# We do not install PolymakeInterface which would need a huge amount
+# of software installed. People who want to use this can probably
+# compile it themselves on their machine.
+cd pkg
+mv PolymakeInterface* ../
+../bin/BuildPackages.sh
+mv ../PolymakeInterface* .
+
+cd ..
+
+# find all executable files which use shared libraries
+#   (this list is empty for the content of the original archive)
+find -type f -executable -exec sh -c "file -i '{}' | \
+      grep -q '\(x-sharedlib\|x-pie-executable\|x-executable\); charset=binary'" \; -print > executables
+
+# find the dynamic libraries needed by the executables
+for a in `cat executables ` 
+do 
+  ldd $a; 
+done | grep '=>' | sed -e 's|.* => ||' | \
+        sed -e 's| (.*||' | sort |uniq > neededlibs
+
+# make copies of needed library files and set rpath in copies
+mkdir -p locallibs
+for a in `cat neededlibs`
+do
+  cp -aL $a locallibs/
+  patchelf --set-rpath '$ORIGIN' locallibs/`basename $a`
+done
+# not most basic libs
+rm -f locallibs/libc.* locallibs/libm.* locallibs/libdl.* \
+      locallibs/librt.* locallibs/libpthread*
+
+# set the rpath's in all executables
+for a in `cat executables `
+do
+  rp='$ORIGIN/'`dirname \`dirname $a\` | sed -e 's|[^/]*|..|g'`"/locallibs/"
+  patchelf --set-rpath $rp $a
+done
+# correction for ./gap
+patchelf --set-rpath '$ORIGIN/locallibs/' gap
+
+rm -rf executables neededlibs
+
+# change absolute paths to allow 'make test...' in GAP root
+sed -e 's|'`pwd`'|.|' GNUmakefile > xxx
+mv xxx GNUmakefile
+
+
+# save versions of GAP and all loadable packages
+./gap << ENDOFINPUT
+LoadAllPackages();
+pl := GAPInfo.PackagesLoaded;; 
+l := SortedList(List(RecNames(pl), a-> pl.(a){[3,2]}), 
+         {n1,n2}-> LowercaseString(n1[1]) < LowercaseString(n2[1]));
+PrintTo("VERSIONS", "GAPVersion := \"",GAPInfo.Version,"\";\n",
+"PackageVersions := ", l, ";\n\n");
+QUIT;
+ENDOFINPUT
+
+cp -a ../../gapsync/gapsync .
+
+

@@ -1,0 +1,35 @@
+
+Exec("echo '--- '`date`");
+if GAPVersionold <> GAPVersion then
+  Print("Core GAP upgraded from ",GAPVersionold," to ",GAPVersion,"\n");
+fi;
+
+if true then
+  pold := List(PackageVersionsold, a-> a[1]);
+  rold := rec(); for a in PackageVersionsold do rold.(a[1]) := a[2]; od;
+  pnew := List(PackageVersions, a-> a[1]);
+  rnew := rec(); for a in PackageVersions do rnew.(a[1]) := a[2]; od;
+  del := Difference(pold, pnew);
+  if Length(del) > 0 then
+    Print("Removed packages:\n");
+    for a in del do
+      Print("    ", a, "\n");
+    od;
+  fi;
+  new := Difference(pnew, pold);
+  if Length(new) > 0 then
+    Print("New packages:\n");
+    for a in new do
+      Print("    ",a," Version ",rnew.(a),"\n");
+    od;
+  fi;
+  upgr := Filtered(Intersection(pold, pnew), a-> rold.(a) <> rnew.(a));
+  if Length(upgr) > 0 then
+    Print("Upgraded packages:\n");
+    for a in upgr do
+      Print("    ",a," Version ",rold.(a)," -> ",rnew.(a), "\n");
+    od;
+  fi;
+fi;
+
+

@@ -1,0 +1,85 @@
+    HOWTO prepare a GAP installation for rsync distribution (Linux)
+    ===============================================================
+
+  1. Make sure that sufficient tools, libraries and header files are
+     installed on your system. In Debian/Ubuntu and derived distributions
+     the following should do:
+
+         apt-get install curl build-essential autoconf libtool \
+                         libgmp-dev libreadline-dev zlib1g-dev \
+                         libncurses5-dev libncursesw5-dev \
+                         libcurl4-openssl-dev \
+                         libx11-dev libxaw7-dev libxt-dev \
+                         libcdd-dev libzmq3-dev libboost-all-dev \
+                         libmpfr-dev libmpfi0-dev libmpc-dev
+  
+  2. Make sure you have ./patchelf in your PATH (if needed 
+     regenerate it with ./make_patchelf).
+
+  3. Download latest GAP release gap*.tar.gz into build directory from
+         https://www.gap-system.org/Releases/
+     [ temporarily, copy Browse-1.8.11.1.tar.gz in same directory ]
+     Also copy the 'gapsync' subdirectory from here to directory of archive.
+
+  4. Call the script
+         InstallForRsync > instlog
+     from this directory within the build directory.
+     Check instlog for problems.
+
+  5. Call the script
+         TestsForRsync > testlog
+     from this directory within the build directory.
+
+
+    To update the distribution
+    ==========================
+    
+  1. Restart the plan above from 3.
+
+  2. Save old VERSIONS file with a command like 
+      sed -e "s/GAPVersion/GAPVersionold/" VERSIONS | \
+         sed -e "s/PackageVersions/PackageVersionsold/" > ~/VERISONSold
+    Then generate new section for website/CHANGES file with
+      gap  <oldversionfile> <newversionfile> ./genCHANGES
+
+  3. Maybe update website/index.html
+
+  4. Copy new files for distribution to rsync server in directory
+       gap@rsync.gap-system.org/home/gap/rsyncfiles/gap-rsync
+     and restart rsync server.
+
+  5. Update website
+       cp website/{index.html,CHANGES,*.css}  \
+                     ~/MyWWWHome/web/~Frank.Luebeck/GAPrsync/
+
+   
+
+We prepare and update the distribution  on a virtual machine with
+Ubuntu Server 16.04 system to make sure that the code will run with the
+basic libraries (libc, libm, libpthread, libdl) on all reasonably up-to-date
+Linux systems.
+
+
+          Starting the rsync server
+          =========================
+
+  1. Create (virtual) server rsync.math.rwth-aachen,de
+                           = rsync.gap-system.org
+     with user 'gap', home directory /home/gap.
+
+  2. Copy (maybe adjust) 
+           rsyncd.conf
+           startrsyncserver
+     there.
+  
+  3, Copy the files to distribute in
+        /home/gap/rsyncfiles/
+  
+  4. To run the rsync server with default port 873 we call the
+     start script /home/gap/startrsyncserver from the /etc/rc.local
+     file (by root, dropping the service to gap.gap afterwards).
+
+  5. At RWTH we need to apply at NOC to open the port 873 on
+     rsync.gap-system.org
+
+

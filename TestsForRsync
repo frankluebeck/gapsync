@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd build/gap*
+
+make testinstall
+
+make teststandard
+
+make testpackages
+

@@ -1,0 +1,12 @@
+#!/bin/bash
+
+dirnam=`dirname $0`
+gapdir=`dirname $dirnam`
+
+# 64 bit version
+cd $gapdir
+source sysinfo.gap-default64
+# nothing to do currently
+
+rm -f `dirname $0`/callpostsync
+
