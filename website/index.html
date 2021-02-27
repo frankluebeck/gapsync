@@ -37,7 +37,7 @@ Any reports or suggestions are welcome.
 </p>
 
 <p>
-The idea is to install <span class="pkg">GAP</span> on Linux by syncronizing 
+The idea is to install <span class="pkg">GAP</span> on Linux by synchronizing 
 via the internet with a reference installation. Some features are:
 </p>
 
@@ -76,20 +76,23 @@ running under
 <a href="http://www.linux.org">Linux</a>, a directory with about 2600&nbsp;MB of
 free space and the <code>rsync</code> program (if you don't have
 <code>rsync</code>, there is certainly a package with this name in your
-Linux distribution). You do not need root permissions if you install in your
+Linux distribution). 
+
+You do not need root permissions if you install in your
 home directory.
 </p>
 
 <p>
-Then copy the start script, called <code>gapsync</code>, into the current
+First copy the start script, called <code>gapsync</code>, into the current
 directory using the following command (don't forget the trailing dot):
 </p>
-<pre>   rsync --port=873 -azv rsync.gap-system.org::gap-rsync/gapsync/gapsync .
+<pre>  rsync --port=873 -azv rsync.gap-system.org::gap-rsync/gapsync/gapsync .
 </pre>
 <p>
-Now call this script:
+Now call this script (as root or with <code>sudo</code> prepended if you 
+want to install in system directories, see below):
 </p>
-<pre>   ./gapsync
+<pre>  ./gapsync
 </pre>
 <p>
 You are asked for two directories. The first is for the installation. 
@@ -108,6 +111,9 @@ question to start the installation. Depending on your network connection
 you can use <span class="pkg">GAP</span> after two to ... minutes (about
 700&nbsp;MB must be transferred via the internet).
 </p>
+<p>You can now delete the script you started with:</p>
+<pre>  rm ./gapsync
+</pre>
 
 <h2>How to call <span class="pkg">GAP</span></h2>
 <p>
@@ -136,8 +142,8 @@ capabilities (but no terminal capabilities in its main window). </dd>
 <pre>   gapsync
 </pre>
 <p>which was installed during initialization and mentioned above. The
-syncronization will usually take just a few seconds. A new workspace is 
-created after each syncronization locally.</p>
+synchronization will usually take just a few seconds. A new workspace is 
+created after each synchronization locally.</p>
 <p>An update should not be made while a <span class="pkg">GAP</span>
 job is running. If you have long running jobs do not use an automatic, say
 nightly, update.</p>
