@@ -5,6 +5,61 @@
 
 Latest changes first.
 
+--- Wed Mar 3 15:08:07 CET 2021
+Core GAP upgraded from 4.11.0 to 4.11.1
+Removed packages:
+    PolymakeInterface
+Upgraded packages:
+    4ti2Interface Version 2019.09.02 -> 2020.10-02
+    AGT Version 0.1 -> 0.2
+    AutoDoc Version 2019.09.04 -> 2020.08.11
+    Browse Version 1.8.11.1 -> 1.8.11.2
+    CAP Version 2019.06.07 -> 2020.10-01
+    CTblLib Version 1.2.2 -> 1.3.1
+    CddInterface Version 2020.01.01 -> 2020.06.24
+    Digraphs Version 1.1.1 -> 1.3.1
+    ExamplesForHomalg Version 2019.09.02 -> 2020.10-02
+    GAPDoc Version 1.6.3 -> 1.6.4
+    Gauss Version 2019.09.02 -> 2020.10-02
+    GaussForHomalg Version 2019.09.02 -> 2020.10-02
+    GeneralizedMorphismsForCAP Version 2019.01.16 -> 2020.10-01
+    GradedModules Version 2020.01.02 -> 2020.10-02
+    GradedRingForHomalg Version 2020.01.02 -> 2020.10-02
+    HAP Version 1.25 -> 1.29
+    HomalgToCAS Version 2019.12.08 -> 2020.10-02
+    IO_ForHomalg Version 2019.09.02 -> 2020.10-02
+    IRREDSOL Version 1.4 -> 1.4.1
+    LinearAlgebraForCAP Version 2019.01.16 -> 2020.10-01
+    LocalizeRingForHomalg Version 2019.09.02 -> 2020.10-02
+    MatricesForHomalg Version 2020.01.02 -> 2020.10-04
+    ModulePresentationsForCAP Version 2019.01.16 -> 2020.10-01
+    Modules Version 2019.09.02 -> 2020.10-02
+    MonoidalCategories Version 2019.06.07 -> 2020.10-01
+    NConvex Version 2019.12.10 -> 2020.11-04
+    NumericalSgps Version 1.2.1 -> 1.2.2
+    PackageManager Version 1.0 -> 1.1
+    Polycyclic Version 2.15.1 -> 2.16
+    PrimGrp Version 3.4.0 -> 3.4.1
+    QPA Version 1.30 -> 1.31
+    RingsForHomalg Version 2019.12.08 -> 2020.11-01
+    SCO Version 2019.09.02 -> 2020.10-02
+    Semigroups Version 3.2.3 -> 3.4.0
+    SmallGrp Version 1.4.1 -> 1.4.2
+    ToolsForHomalg Version 2019.09.02 -> 2020.10-03
+    ToricVarieties Version 2019.12.05 -> 2021.01.12
+    TransGrp Version 2.0.5 -> 3.0
+    Wedderga Version 4.9.5 -> 4.10.0
+    XMod Version 2.77 -> 2.82
+    XModAlg Version 1.17 -> 1.18
+    curlInterface Version 2.1.1 -> 2.2.1
+    ferret Version 1.0.2 -> 1.0.3
+    homalg Version 2019.09.01 -> 2020.10-02
+    json Version 2.0.1 -> 2.0.2
+    kan Version 1.29 -> 1.32
+    matgrp Version 0.63 -> 0.64
+    profiling Version 2.2.1 -> 2.3
+    singular Version 2019.10.01 -> 2020.12.18
+
 --- Mi 24. Feb 14:14:56 CET 2021
 Initial version of this service
 Core GAP version 4.11.0
@@ -92,6 +147,7 @@ Packages:
     PatternClass Version 2.4.2
     Polenta Version 1.3.9
     Polycyclic Version 2.15.1
+    PolymakeInterface 2019.09.02
     PrimGrp Version 3.4.0
     QPA Version 1.30
     QuaGroup Version 1.8.2

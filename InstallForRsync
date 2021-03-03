@@ -21,7 +21,7 @@ tar xzvf $ARCHIVE --one-top-level=build
 #TEMPORARY:  
 cd build/gap*/pkg/
 rm -rf Browse
-tar xvzf ../../../Browse-1.8.11.1.tar.gz
+tar xvzf ../../../Browse-1.8.11.2.tar.gz
 cd ../../../
 
 
@@ -63,7 +63,7 @@ do
 done
 # not most basic libs
 rm -f locallibs/libc.* locallibs/libm.* locallibs/libdl.* \
-      locallibs/librt.* locallibs/libpthread*
+      locallibs/librt.* locallibs/libpthread* locallibs/libresolve.*
 
 # set the rpath's in all executables
 for a in `cat executables `
