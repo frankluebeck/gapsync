@@ -1,10 +1,10 @@
 #!/bin/bash 
 
-##  init and syncronization script for GAP 4.5 under Linux
+##  init and synchronization script for GAP 4.5 under Linux
 ##  (C) Frank Lübeck
 arch=`uname -m`
 if [ ! -f gapsync.issyncdir ]; then
-  echo 'Welcome to the GAP installation by syncronizing a reference installation.'
+  echo 'Welcome to the GAP installation by synchronizing a reference installation.'
   echo ''
   echo 'Remarks and suggestions to: Frank.Luebeck@Math.RWTH-Aachen.De'
   echo
@@ -81,7 +81,7 @@ if [ ! -f gapsync.issyncdir ]; then
     fi
   fi
   
-  echo "Going to syncronize GAP in: "$gappath
+  echo "Going to synchronize GAP in: "$gappath
 
   echo 'Shall I start to copy GAP to your machine? (y/N)'
   read -n 1 start
