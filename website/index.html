@@ -214,7 +214,12 @@ If you change things outside the <code>local</code> subdirectory they are
 deleted with the next call of <code>gapsync</code>. If you find errors in
 this part, please report them.
 </p>
-
+<p>Note that this distribution is not so useful for you if you need to
+compile <span class="pkg">GAP</span> kernel extensions for some packages
+yourself. It is very likely, that your compiler and system libraries will
+not be compatible with those on the machine which is used to build this
+distribution.
+</p>
 
 <h2>Feedback</h2>
 
@@ -234,16 +239,13 @@ and
 need or suggest further 
 external software, and may not work immediately with full functionality. 
 <p>
-The package <span class="pkg">PolymakeInterface</span> is currently only
-unpacked but not installed.
-</p>
 <p>Note that the <span class="pkg">AtlasRep</span> package contains
 directories <code>gap4r4/pkg/atlasrep/data*</code> which are world writable
 (for caching downloaded representations). These are emptied with any update
 of this distribution.</p>
 <p>If you don't want this you can customize the script
 <code>gap-rsync/local/bin/gapsync</code> in your installation, add the options 
-<code>--exclude=pkg/atlasrep/datagens --exclude=pkg/atlasrep/dataword</code>
+<code>--exclude=pkg/atlasrep/datagens --exclude=pkg/atlasrep/dataword --exclude=pkg/atlasrep/dataext</code>
 to the <code>rsync</code> call (search the line containing
 <code>--port</code>).
 </p>
