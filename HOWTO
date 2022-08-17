@@ -7,11 +7,11 @@
 
          apt-get install curl build-essential autoconf libtool \
                          libgmp-dev libreadline-dev zlib1g-dev \
-                         libncurses5-dev libncursesw5-dev \
+                         libncurses-dev libncursesw5-dev \
                          libcurl4-openssl-dev \
                          libx11-dev libxaw7-dev libxt-dev \
-                         libcdd-dev libzmq3-dev libboost-all-dev \
-                         libmpfr-dev libmpfi0-dev libmpc-dev
+                         libcdd-dev libzmq3-dev \
+                         libmpfr-dev libmpfi-dev libmpc-dev
   
   2. Make sure you have ./patchelf in your PATH (if needed 
      regenerate it with ./make_patchelf).
