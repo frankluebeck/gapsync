@@ -1,7 +1,5 @@
 #!/bin/bash
 
-#TEMPORARY:  copy Browse-1.8.11.1.tar.gz next to GAP archive
-
 hostname
 date
 
@@ -18,27 +16,20 @@ fi
 
 tar xzvf $ARCHIVE --one-top-level=build
 
-#TEMPORARY:  
-cd build/gap*/pkg/
-rm -rf Browse
-tar xvzf ../../../Browse-1.8.11.2.tar.gz
-cd ../../../
-
-
 # compile GAP and packages
 cd build
 mv gap* gap-rsync
 cd gap-rsync
+
+# repair some permissions
+chmod -R -c g-w,o-r,g+r,o+r .
+
 ./configure
 make -j 8
 
-# We do not install PolymakeInterface which would need a huge amount
-# of software installed. People who want to use this can probably
-# compile it themselves on their machine.
+# compiling packages
 cd pkg
-mv PolymakeInterface* ../
 ../bin/BuildPackages.sh
-mv ../PolymakeInterface* .
 
 cd ..
 
