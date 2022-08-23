@@ -23,6 +23,7 @@ cd gap-rsync
 
 # repair some permissions
 chmod -R -c g-w,o-r,g+r,o+r .
+chmod 755 pkg
 
 ./configure
 make -j 8
