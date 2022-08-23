@@ -44,6 +44,9 @@
 
   3. Maybe update website/index.html
 
+  4.0 (temporarily: make crosslinks work by calling gapsync/pkglinks.py
+     in build/gap-rsync)
+
   4. Copy new files for distribution to rsync server in directory
        gap@rsync.gap-system.org/home/gap/rsyncfiles/gap-rsync
      and restart rsync server.
