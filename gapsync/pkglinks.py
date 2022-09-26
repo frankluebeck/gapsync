@@ -63,6 +63,7 @@ def longestmatch(s, t):
   return l-1
 
 os.chdir("pkg")
+f = open("RemoveTemporarySymLinks", "w")
 dnams = os.listdir(".")
 for nam in linkdirs:
   if not nam in dnams:
@@ -75,5 +76,10 @@ for nam in linkdirs:
         best = dn
     if best in dnams:
       print(f"Linking {best} to {nam} ...")
+      f.write("rm -f "+nam+"\n")
       os.symlink(best, nam)
-      
+
+f.write("rm -f RemoveTemporarySymLinks\n");
+f.close()
+os.chmod("RemoveTemporarySymLinks", 0o755);
+
