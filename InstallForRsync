@@ -72,6 +72,18 @@ rm -rf executables neededlibs
 sed -e 's|'`pwd`'|.|' GNUmakefile > xxx
 mv xxx GNUmakefile
 
+# adjust sysinfo.gap and gac
+sed -e 's|"/cache/build/gap-rsync/|$GAPROOTPATH"|' < sysinfo.gap > xxx
+mv xxx sysinfo.gap
+sed -e 's|/cache/build/gap-rsync|$GAPROOTPATH|' < sysinfo.gap > xxx
+mv xxx sysinfo.gap
+echo 'GAPROOTPATH=`pwd`/' > xxx
+cat sysinfo.gap >> xxx
+mv xxx sysinfo.gap
+
+sed -e 's|"/cache/build/gap-rsync/|`pwd`"/|' gac > xxx
+mv xxx gac
+chmod 755 gac
 
 # save versions of GAP and all loadable packages
 ./gap << ENDOFINPUT
@@ -85,5 +97,4 @@ QUIT;
 ENDOFINPUT
 
 cp -a ../../gapsync/gapsync .
-
 
