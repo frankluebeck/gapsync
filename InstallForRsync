@@ -96,5 +96,5 @@ PrintTo("VERSIONS", "GAPVersion := \"",GAPInfo.Version,"\";\n",
 QUIT;
 ENDOFINPUT
 
-cp -a ../../gapsync/gapsync .
+cp -a ../../gapsync .
 
