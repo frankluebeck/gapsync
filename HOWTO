@@ -30,6 +30,9 @@
          TestsForRsync > testlog
      from this directory within the build directory.
 
+  6. If all looks good, delete:
+        rm -rf build/gap-rsync/dev/log 
+
 
     To update the distribution
     ==========================
@@ -50,6 +53,8 @@
   4. Copy new files for distribution to rsync server in directory
        gap@rsync.gap-system.org/home/gap/rsyncfiles/gap-rsync
      and restart rsync server.
+     Can avoid changed dates with:
+       rsync  -av --no-t -c --delete ./ gap@rsync.gap-system.org:/home/gap/rsyncfiles/x/gap-rsync/
 
   5. Update website
        cp website/{index.html,CHANGES,*.css}  \
