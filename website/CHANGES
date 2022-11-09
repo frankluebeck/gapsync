@@ -5,6 +5,60 @@
 
 Latest changes first.
 
+--- Mi 9. Nov 13:28:16 CET 2022
+Core GAP upgraded from 4.12.0 to 4.12.1
+Upgraded packages:
+    4ti2Interface Version 2022.08-03 -> 2022.09-01
+    ACE Version 5.5 -> 5.6.1
+    AtlasRep Version 2.1.5 -> 2.1.6
+    AutoDoc Version 2022.07.10 -> 2022.10.20
+    Browse Version 1.8.14 -> 1.8.18
+    CAP Version 2022.08-05 -> 2022.10-06
+    DeepThought Version 1.0.5 -> 1.0.6
+    Digraphs Version 1.5.3 -> 1.6.0
+    EDIM Version 1.3.5 -> 1.3.6
+    ExamplesForHomalg Version 2022.08-02 -> 2022.10-01
+    FinInG Version 1.5 -> 1.5.1
+    Forms Version 1.2.8 -> 1.2.9
+    Francy Version 1.2.4 -> 1.2.5
+    GUAVA Version 3.16 -> 3.17
+    Gauss Version 2022.08-04 -> 2022.10-01
+    GaussForHomalg Version 2022.08-02 -> 2022.08-03
+    GeneralizedMorphismsForCAP Version 2022.05-01 -> 2022.09-01
+    GradedModules Version 2022.08-02 -> 2022.09-02
+    GradedRingForHomalg Version 2022.08-02 -> 2022.10-01
+    HomalgToCAS Version 2022.08-02 -> 2022.10-01
+    IO Version 4.7.2 -> 4.8.0
+    IO_ForHomalg Version 2022.08-03 -> 2022.09-01
+    LinearAlgebraForCAP Version 2022.08-03 -> 2022.10-03
+    LocalizeRingForHomalg Version 2022.08-02 -> 2022.09-01
+    MajoranaAlgebras Version 1.4 -> 1.5
+    MapClass Version 1.4.5 -> 1.4.6
+    MatricesForHomalg Version 2022.08-02 -> 2022.10-05
+    ModulePresentationsForCAP Version 2022.08-02 -> 2022.10-04
+    Modules Version 2022.08-03 -> 2022.09-01
+    MonoidalCategories Version 2022.08-03 -> 2022.10-01
+    NConvex Version 2020.11-04 -> 2022.09-01
+    PackageManager Version 1.3 -> 1.3.2
+    PatternClass Version 2.4.2 -> 2.4.3
+    RingsForHomalg Version 2022.08-03 -> 2022.10-02
+    SCO Version 2022.08-02 -> 2022.09-01
+    SONATA Version 2.9.4 -> 2.9.5
+    ToolsForHomalg Version 2022.08-02 -> 2022.09-08
+    crypting Version 0.10 -> 0.10.3
+    curlInterface Version 2.2.3 -> 2.3.1
+    ferret Version 1.0.8 -> 1.0.9
+    genss Version 1.6.7 -> 1.6.8
+    homalg Version 2022.08-03 -> 2022.08-04
+    json Version 2.1.0 -> 2.1.1
+    kbmag Version 1.5.9 -> 1.5.10
+    orb Version 4.8.5 -> 4.9.0
+    profiling Version 2.5.0 -> 2.5.1
+    recog Version 1.3.2 -> 1.4.2
+    singular Version 2020.12.18 -> 2022.09.23
+    utils Version 0.76 -> 0.77
+
+
 --- Di 23. Aug 01:16:54 CEST 2022
 Core GAP upgraded from 4.11.1 to 4.12.0
 New packages:
