@@ -58,7 +58,7 @@
    
 
 We prepare and update the distribution  on a virtual machine with
-Ubuntu Server 16.04 system to make sure that the code will run with the
+Ubuntu Server 18.04 system to make sure that the code will run with the
 basic libraries (libc, libm, libpthread, libdl) on all reasonably up-to-date
 Linux systems.
 
