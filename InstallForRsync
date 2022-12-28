@@ -98,3 +98,6 @@ ENDOFINPUT
 
 cp -a ../../gapsync .
 
+# check if last step worked, maybe gapsync dir is in another position
+if test -f gapsync ; then echo DONE; else echo "ERROR: copy gapsync dir to "`pwd` ; fi
+

@@ -5,6 +5,57 @@
 
 Latest changes first.
 
+--- Mo 19. Dez 19:04:00 CET 2022
+Core GAP upgraded from 4.12.1 to 4.12.2
+New packages:
+    SL2Reps Version 1.1
+Upgraded packages:
+    AGT Version 0.2 -> 0.3
+    Browse Version 1.8.18 -> 1.8.19
+    CAP Version 2022.10-06 -> 2022.12-11
+    CRISP Version 1.4.5 -> 1.4.6
+    CddInterface Version 2022.08.11 -> 2022.11.01
+    Digraphs Version 1.6.0 -> 1.6.1
+    ExamplesForHomalg Version 2022.10-01 -> 2022.11-01
+    FR Version 2.4.10 -> 2.4.12
+    FinInG Version 1.5.1 -> 1.5.4
+    GRAPE Version 4.8.5 -> 4.9.0
+    Gauss Version 2022.10-01 -> 2022.11-01
+    GeneralizedMorphismsForCAP Version 2022.09-01 -> 2022.12-01
+    GradedRingForHomalg Version 2022.10-01 -> 2022.11-01
+    GrpConst Version 2.6.2 -> 2.6.3
+    HomalgToCAS Version 2022.10-01 -> 2022.11-02
+    IO_ForHomalg Version 2022.09-01 -> 2022.11-01
+    IRREDSOL Version 1.4.3 -> 1.4.4
+    LiePRing Version 2.7 -> 2.8
+    LinearAlgebraForCAP Version 2022.10-03 -> 2022.12-04
+    LocalizeRingForHomalg Version 2022.09-01 -> 2022.11-01
+    MajoranaAlgebras Version 1.5 -> 1.5.1
+    MatricesForHomalg Version 2022.10-05 -> 2022.12-01
+    ModulePresentationsForCAP Version 2022.10-04 -> 2022.12-01
+    Modules Version 2022.09-01 -> 2022.11-01
+    MonoidalCategories Version 2022.10-01 -> 2022.12-01
+    NormalizInterface Version 1.3.4 -> 1.3.5
+    OpenMath Version 11.5.1 -> 11.5.2
+    PrimGrp Version 3.4.2 -> 3.4.3
+    RCWA Version 4.7.0 -> 4.7.1
+    RingsForHomalg Version 2022.10-02 -> 2022.11-01
+    SCSCP Version 2.3.1 -> 2.4.0
+    SONATA Version 2.9.5 -> 2.9.6
+    Semigroups Version 5.0.2 -> 5.2.0
+    SglPPow Version 2.2 -> 2.3
+    SmallGrp Version 1.5 -> 1.5.1
+    ToolsForHomalg Version 2022.09-08 -> 2022.12-01
+    XModAlg Version 1.22 -> 1.23
+    YangBaxter Version 0.10.1 -> 0.10.2
+    crypting Version 0.10.3 -> 0.10.4
+    datastructures Version 0.2.7 -> 0.3.0
+    homalg Version 2022.08-04 -> 2022.11-01
+    loops Version 3.4.2 -> 3.4.3
+    nq Version 2.5.8 -> 2.5.9
+    utils Version 0.77 -> 0.81
+
+
 --- Mi 9. Nov 13:28:16 CET 2022
 Core GAP upgraded from 4.12.0 to 4.12.1
 Upgraded packages:
