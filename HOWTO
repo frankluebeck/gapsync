@@ -30,9 +30,6 @@
          TestsForRsync > testlog
      from this directory within the build directory.
 
-  6. If all looks good, delete:
-        rm -rf build/gap-rsync/dev/log 
-
 
     To update the distribution
     ==========================
@@ -47,7 +44,7 @@
 
   3. Maybe update website/index.html
 
-  4.0 (temporarily: make crosslinks work by calling gapsync/pkglinks.py
+  4.0 (no longer needed???: make crosslinks work by calling gapsync/pkglinks.py
      in build/gap-rsync)
 
   4. Copy new files for distribution to rsync server in directory
@@ -62,8 +59,8 @@
 
    
 
-We prepare and update the distribution  on a virtual machine with
-Ubuntu Server 18.04 system to make sure that the code will run with the
+We prepare and update the distribution  on a (virtual) machine with
+Debian 10 system to make sure that the code will run with the
 basic libraries (libc, libm, libpthread, libdl) on all reasonably up-to-date
 Linux systems.
 

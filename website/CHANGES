@@ -5,6 +5,102 @@
 
 Latest changes first.
 
+--- Mon 18 Mar 2024 07:05:01 PM CET
+Core GAP upgraded from 4.12.2 to 4.13.0
+New packages:
+    LINS Version 0.9
+    QDistRnd Version 0.9.4
+    SOTGrps Version 1.2
+    francy Version 2.0.3
+    typeset Version 1.2.2
+Upgraded packages:
+    4ti2Interface Version 2022.09-01 -> 2023.02-04
+    ACE Version 5.6.1 -> 5.6.2
+    AGT Version 0.3 -> 0.3.1
+    ANUPQ Version 3.2.6 -> 3.3.0
+    AtlasRep Version 2.1.6 -> 2.1.8
+    AutoDoc Version 2022.10.20 -> 2023.06.19
+    Browse Version 1.8.19 -> 1.8.21
+    CAP Version 2022.12-11 -> 2024.03-02
+    CTblLib Version 1.3.4 -> 1.3.9
+    CaratInterface Version 2.3.4 -> 2.3.6
+    Circle Version 1.6.5 -> 1.6.6
+    Congruence Version 1.2.4 -> 1.2.5
+    Cryst Version 4.1.25 -> 4.1.27
+    DESIGN Version 1.7 -> 1.8
+    Digraphs Version 1.6.1 -> 1.7.1
+    EDIM Version 1.3.6 -> 1.3.8
+    Example Version 4.3.2 -> 4.3.4
+    ExamplesForHomalg Version 2022.11-01 -> 2023.10-01
+    FGA Version 1.4.0 -> 1.5.0
+    FORMAT Version 1.4.3 -> 1.4.4
+    FPLSA Version 1.2.5 -> 1.2.6
+    FR Version 2.4.12 -> 2.4.13
+    FinInG Version 1.5.4 -> 1.5.6
+    Francy Version 1.2.5 -> 2.0.3
+    GAPDoc Version 1.6.6 -> 1.6.7
+    GUAVA Version 3.17 -> 3.18
+    Gauss Version 2022.11-01 -> 2023.02-04
+    GaussForHomalg Version 2022.08-03 -> 2023.11-01
+    GeneralizedMorphismsForCAP Version 2022.12-01 -> 2024.01-01
+    GradedModules Version 2022.09-02 -> 2024.01-01
+    GradedRingForHomalg Version 2022.11-01 -> 2023.08-01
+    GrpConst Version 2.6.3 -> 2.6.5
+    HAP Version 1.47 -> 1.62
+    HeLP Version 3.5 -> 4.0
+    HomalgToCAS Version 2022.11-02 -> 2023.11-01
+    IO Version 4.8.0 -> 4.8.2
+    IO_ForHomalg Version 2022.11-01 -> 2023.02-04
+    JupyterKernel Version 1.4.1 -> 1.5.0
+    LAGUNA Version 3.9.5 -> 3.9.6
+    LinearAlgebraForCAP Version 2022.12-04 -> 2024.02-02
+    LocalizeRingForHomalg Version 2022.11-01 -> 2023.10-01
+    MatricesForHomalg Version 2022.12-01 -> 2024.02-01
+    ModIsom Version 2.5.3 -> 2.5.4
+    ModulePresentationsForCAP Version 2022.12-01 -> 2024.01-04
+    Modules Version 2022.11-01 -> 2024.01-01
+    MonoidalCategories Version 2022.12-01 -> 2024.02-04
+    NormalizInterface Version 1.3.5 -> 1.3.6
+    OpenMath Version 11.5.2 -> 11.5.3
+    PackageManager Version 1.3.2 -> 1.4.3
+    PrimGrp Version 3.4.3 -> 3.4.4
+    QPA Version 1.34 -> 1.35
+    QuaGroup Version 1.8.3 -> 1.8.4
+    RepnDecomp Version 1.2.1 -> 1.3.0
+    Repsn Version 3.1.0 -> 3.1.2
+    RingsForHomalg Version 2022.11-01 -> 2023.11-02
+    SCO Version 2022.09-01 -> 2023.08-01
+    SCSCP Version 2.4.0 -> 2.4.2
+    Semigroups Version 5.2.0 -> 5.3.7
+    SmallGrp Version 1.5.1 -> 1.5.3
+    StandardFF Version 0.9.4 -> 1.0
+    TomLib Version 1.2.9 -> 1.2.11
+    ToolsForHomalg Version 2022.12-01 -> 2023.11-01
+    TransGrp Version 3.6.3 -> 3.6.5
+    UGALY Version 4.0.3 -> 4.1.3
+    UnitLib Version 4.1.0 -> 4.2.0
+    Wedderga Version 4.10.2 -> 4.10.5
+    XMod Version 2.88 -> 2.92
+    YangBaxter Version 0.10.2 -> 0.10.3
+    cohomolo Version 1.6.10 -> 1.6.11
+    curlInterface Version 2.3.1 -> 2.3.2
+    cvec Version 2.7.6 -> 2.8.1
+    ferret Version 1.0.9 -> 1.0.10
+    float Version 1.0.3 -> 1.0.4
+    groupoids Version 1.71 -> 1.74
+    homalg Version 2022.11-01 -> 2024.01-01
+    idrel Version 2.44 -> 2.46
+    images Version 1.3.1 -> 1.3.2
+    json Version 2.1.1 -> 2.2.0
+    kan Version 1.34 -> 1.37
+    kbmag Version 1.5.10 -> 1.5.11
+    nq Version 2.5.9 -> 2.5.11
+    permut Version 2.0.4 -> 2.0.5
+    polymaking Version 0.8.6 -> 0.8.7
+    profiling Version 2.5.1 -> 2.5.4
+    singular Version 2022.09.23 -> 2023.02.09
+    utils Version 0.81 -> 0.85
+
 --- Mo 19. Dez 19:04:00 CET 2022
 Core GAP upgraded from 4.12.1 to 4.12.2
 New packages:

@@ -2,9 +2,7 @@
 
 cd build/gap*
 
-make testinstall
+./gap tst/testinstall.g
 
-make teststandard
-
-make testpackages
+./gap tst/teststandard.g
 
