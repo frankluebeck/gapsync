@@ -26,6 +26,10 @@
      from this directory within the build directory.
      Check instlog for problems.
 
+  4a. All .o files seem not to be needed (this should be handled, with other
+     unneeded files, by the standard make scripts):
+         find . -name \*.o  -exec rm -f {} \;
+
   5. Call the script
          TestsForRsync > testlog
      from this directory within the build directory.
@@ -60,7 +64,7 @@
    
 
 We prepare and update the distribution  on a (virtual) machine with
-Debian 10 system to make sure that the code will run with the
+Debian 11 system to make sure that the code will run with the
 basic libraries (libc, libm, libpthread, libdl) on all reasonably up-to-date
 Linux systems.
 

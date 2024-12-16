@@ -5,6 +5,81 @@
 
 Latest changes first.
 
+--- Mon 16 Dec 2024 01:47:37 PM CET
+Core GAP upgraded from 4.13.1 to 4.14.0
+New packages:
+    WPE Version 0.8
+    corefreesub Version 0.6
+    smallantimagmas Version 0.2.12
+Upgraded packages:
+    4ti2Interface Version 2023.02-04 -> 2024.11-01
+    ANUPQ Version 3.3.0 -> 3.3.1
+    AtlasRep Version 2.1.8 -> 2.1.9
+    Automata Version 1.15 -> 1.16
+    CAP Version 2024.06-02 -> 2024.11-02
+    CaratInterface Version 2.3.6 -> 2.3.7
+    CddInterface Version 2022.11.01 -> 2024.09.02
+    CoReLG Version 1.56 -> 1.57
+    Congruence Version 1.2.6 -> 1.2.7
+    Cubefree Version 1.19 -> 1.20
+    DESIGN Version 1.8 -> 1.8.2
+    DeepThought Version 1.0.6 -> 1.0.7
+    Digraphs Version 1.7.1 -> 1.9.0
+    Example Version 4.3.4 -> 4.4.0
+    Forms Version 1.2.11 -> 1.2.12
+    GBNP Version 1.0.5 -> 1.1.0
+    GRAPE Version 4.9.0 -> 4.9.2
+    Gauss Version 2023.02-04 -> 2024.11-01
+    GaussForHomalg Version 2023.11-01 -> 2024.08-01
+    GeneralizedMorphismsForCAP Version 2024.04-01 -> 2024.09-03
+    GradedRingForHomalg Version 2023.08-01 -> 2024.07-01
+    HAP Version 1.62 -> 1.66
+    IO Version 4.8.2 -> 4.9.1
+    IntPic Version 0.3.0 -> 0.4.0
+    JupyterKernel Version 1.5.0 -> 1.5.1
+    LAGUNA Version 3.9.6 -> 3.9.7
+    LinearAlgebraForCAP Version 2024.06-01 -> 2024.10-01
+    MajoranaAlgebras Version 1.5.1 -> 1.5.2
+    MatricesForHomalg Version 2024.02-01 -> 2024.11-02
+    ModIsom Version 2.5.4 -> 3.0.0
+    ModulePresentationsForCAP Version 2024.04-01 -> 2024.09-02
+    MonoidalCategories Version 2024.06-01 -> 2024.09-05
+    NormalizInterface Version 1.3.6 -> 1.3.7
+    NumericalSgps Version 1.3.1 -> 1.4.0
+    PackageManager Version 1.4.3 -> 1.6
+    PatternClass Version 2.4.3 -> 2.4.5
+    RingsForHomalg Version 2023.11-02 -> 2024.11-02
+    SCSCP Version 2.4.2 -> 2.4.3
+    SLA Version 1.5.3 -> 1.6.2
+    SOTGrps Version 1.2 -> 1.3
+    Semigroups Version 5.3.7 -> 5.4.0
+    SgpViz Version 0.999.5 -> 0.999.6
+    SmallGrp Version 1.5.3 -> 1.5.4
+    Smallsemi Version 0.7.0 -> 0.7.1
+    ToolsForHomalg Version 2023.11-01 -> 2024.09-01
+    Toric Version 1.9.5 -> 1.9.6
+    Unipot Version 1.5 -> 1.6
+    YangBaxter Version 0.10.3 -> 0.10.6
+    ZeroMQInterface Version 0.14 -> 0.16
+    crypting Version 0.10.4 -> 0.10.5
+    curlInterface Version 2.3.2 -> 2.4.0
+    cvec Version 2.8.1 -> 2.8.2
+    datastructures Version 0.3.0 -> 0.3.1
+    ferret Version 1.0.11 -> 1.0.14
+    float Version 1.0.4 -> 1.0.5
+    genss Version 1.6.8 -> 1.6.9
+    groupoids Version 1.74 -> 1.76
+    hecke Version 1.5.3 -> 1.5.4
+    idrel Version 2.47 -> 2.48
+    images Version 1.3.2 -> 1.3.3
+    json Version 2.2.1 -> 2.2.2
+    loops Version 3.4.3 -> 3.4.4
+    lpres Version 1.0.3 -> 1.1.1
+    matgrp Version 0.70 -> 0.71
+    orb Version 4.9.0 -> 4.9.1
+    profiling Version 2.5.4 -> 2.6.0
+    recog Version 1.4.2 -> 1.4.3
+
 --- Mon 18 Mar 2024 07:05:01 PM CET
 Core GAP upgraded from 4.12.2 to 4.13.0
 New packages:
