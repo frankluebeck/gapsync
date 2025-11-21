@@ -5,6 +5,90 @@
 
 Latest changes first.
 
+--- Fri 21 Nov 2025 06:45:33 PM CET
+Core GAP upgraded from 4.14.0 to 4.15.1
+Removed packages:
+    ToricVarieties
+New packages:
+    ALCO Version 1.1.2
+    IBNP Version 0.17
+    InduceReduce Version 1.3
+    SmallClassNr Version 1.4.2
+    TwistedConjugacy Version 3.1.1
+    UTable Version 0.2.dev
+Upgraded packages:
+    ACE Version 5.6.2 -> 5.7.0
+    AClib Version 1.3.2 -> 1.3.3
+    ANUPQ Version 3.3.1 -> 3.3.2
+    AutPGrp Version 1.11 -> 1.11.1
+    AutoDoc Version 2023.06.19 -> 2025.10.16
+    AutomGrp Version 1.3.2 -> 1.3.3
+    CAP Version 2024.11-02 -> 2025.09-04
+    CRISP Version 1.4.6 -> 1.4.8
+    CTblLib Version 1.3.9 -> 1.3.11
+    CddInterface Version 2024.09.02 -> 2025.06.24
+    Cryst Version 4.1.27 -> 4.1.30
+    Cubefree Version 1.20 -> 1.21
+    DeepThought Version 1.0.7 -> 1.0.9
+    Digraphs Version 1.9.0 -> 1.13.1
+    Example Version 4.4.0 -> 4.4.1
+    FPLSA Version 1.2.6 -> 1.2.7
+    Forms Version 1.2.12 -> 1.2.13
+    GRAPE Version 4.9.2 -> 4.9.3
+    GUAVA Version 3.19 -> 3.20
+    GeneralizedMorphismsForCAP Version 2024.09-03 -> 2025.08-01
+    GradedModules Version 2024.01-01 -> 2024.12-01
+    HAP Version 1.66 -> 1.70
+    HomalgToCAS Version 2023.11-01 -> 2025.08-01
+    IO Version 4.9.1 -> 4.9.3
+    LieAlgDB Version 2.2.1 -> 2.3.0
+    LinearAlgebraForCAP Version 2024.10-01 -> 2025.09-01
+    MatricesForHomalg Version 2024.11-02 -> 2025.09-01
+    ModulePresentationsForCAP Version 2024.09-02 -> 2025.09-01
+    Modules Version 2024.01-01 -> 2024.12-01
+    MonoidalCategories Version 2024.09-05 -> 2025.08-02
+    NConvex Version 2022.09-01 -> 2024.12-01
+    NormalizInterface Version 1.3.7 -> 1.4.1
+    PackageManager Version 1.6 -> 1.6.3
+    Polenta Version 1.3.10 -> 1.3.11
+    Polycyclic Version 2.16 -> 2.17
+    PrimGrp Version 3.4.4 -> 4.0.1
+    QDistRnd Version 0.9.4 -> 0.9.5
+    RCWA Version 4.7.1 -> 4.8.0
+    RDS Version 1.8 -> 1.9
+    RepnDecomp Version 1.3.0 -> 1.3.1
+    ResClasses Version 4.7.3 -> 4.7.4
+    SCSCP Version 2.4.3 -> 2.4.4
+    SONATA Version 2.9.6 -> 2.9.7
+    Semigroups Version 5.4.0 -> 5.5.4
+    Smallsemi Version 0.7.1 -> 0.7.2
+    ToolsForHomalg Version 2024.09-01 -> 2025.05-01
+    UnitLib Version 4.2.0 -> 5.0.0
+    Wedderga Version 4.10.5 -> 4.11.1
+    XMod Version 2.92 -> 2.95
+    XModAlg Version 1.23 -> 1.32
+    YangBaxter Version 0.10.6 -> 0.10.7
+    ZeroMQInterface Version 0.16 -> 0.17
+    cohomolo Version 1.6.11 -> 1.6.12
+    crypting Version 0.10.5 -> 0.10.6
+    curlInterface Version 2.4.0 -> 2.4.2
+    cvec Version 2.8.2 -> 2.8.4
+    datastructures Version 0.3.1 -> 0.4.0
+    ferret Version 1.0.14 -> 1.0.15
+    float Version 1.0.5 -> 1.0.9
+    groupoids Version 1.76 -> 1.79
+    idrel Version 2.48 -> 2.49
+    json Version 2.2.2 -> 2.2.3
+    matgrp Version 0.71 -> 0.72
+    orb Version 4.9.1 -> 5.0.1
+    profiling Version 2.6.0 -> 2.6.2
+    recog Version 1.4.3 -> 1.4.4
+    singular Version 2024.06.03 -> 2025.08.26
+    smallantimagmas Version 0.2.12 -> 0.5.1
+    typeset Version 1.2.2 -> 1.2.3
+    utils Version 0.85 -> 0.92
+
+
 --- Mon 16 Dec 2024 01:47:37 PM CET
 Core GAP upgraded from 4.13.1 to 4.14.0
 New packages:
